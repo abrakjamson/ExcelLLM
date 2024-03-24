@@ -30,18 +30,26 @@ The AICorrect function uses the language model to correct typos or incorrect for
 *Signature*: =AICorrect(value, category)
 
 *Example*: =AICorrect(A2, "email address")
+
+<img src="readmePictures/Corrections.png" width="400" />
+
 ## =AITemplate
 The AITemplate function simplifies prompt creation by letting you use placeholders. You could do the same with the CONCAT feature, but I find this much simpler. It takes a parameter for the template, and any number of parameters for the placeholder values.
 
 *Signature*: =AITemplate(template,args,...)
 
 *Example*: =AITemplate("Convert the following phrase into %1 language: %2",A3,B3)
-## =AIAdanced
+
+<img src="readmePictures/Templates.png" width="400" />
+
+## =AIAdvanced
 The AIAdvanced function lets you specify the system prompt, few-shot examples, and max tokens. Adding examples helps prevent the model from adding more information to the response that you don't need. You must select two equal columns of prompts and completions.
 
 *Signature*: =AIAdvanced(userPrompt,maxTokens,systemPrompt,userExamples,assistantExamples)
 
 *Example*: =AIAdvanced(A7,5,"Calculate the sentiment of the given sentence from -1.0 to 1.0",A$4:A$6,B$4:B$6)
+
+<img src="readmePictures/Advanced.png" width="500" />
 
 # Troubleshooting
 The most common issue is the language model adding more information than you are asking for. It can help to include few-shot examples, either with =AIAdvanced or by editing the VBA code.
