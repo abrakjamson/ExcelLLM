@@ -13,7 +13,7 @@ You should consider this project more like an educational experience than softwa
 # Installation
 You must have either a locally hosted language model compatible with OpenAI's chat completions, or a paid OpenAI API Key. The easiest way to host your own language model is with [LM Studio](https://lmstudio.ai/). For basic text manipulation, 7B models like Mistral usually do well but sometimes don't follow instructions.
 ## Option 1
-Download the Excel workbook, clicking past all the warnings about macro-enabled workbooks (see the Warnings above). It includes the VBA and sample usage in three worksheets
+Download the Excel workbook, clicking past all the warnings about macro-enabled workbooks (see the Warnings above). You'll also have to open the file properties from explorer to make it Unblocked. The workbook includes the VBA and sample usage in three worksheets, and you can bring in your data.
 
 ## Option 2
 1. Download AI.bas and JSON.bas.
